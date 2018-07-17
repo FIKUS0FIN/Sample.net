@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        bat "\"${tool 'MSBuild-deff'}\" SampleApp.sln"
+        bat "\"${tool 'MSBuild-deff'}\" \t:Build SampleApp.sln"
       }
     }
   }
