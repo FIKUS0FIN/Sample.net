@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         bat 'nuget restore'
-        bat "\"${tool 'MSBuild-deff'}\" \t:Build SampleApp\SampleApp.csproj"
+        bat "\"${tool 'MSBuild-deff'}\""
       }
     }
   }
